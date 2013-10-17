@@ -1,0 +1,99 @@
+.alf-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+}
+
+[class*=alf-col-] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 460px;
+}
+
+.alf-region.alf-col-bottom,
+.alf-col-bottom {
+    margin-bottom: 35px !important;
+}
+
+.alf-region.alf-col-top,
+.alf-col-top {
+    margin-top: 35px !important;
+}
+
+.alf-col-no-margin {
+    margin: 0 !important;
+    width: 495px;
+}
+
+.alf-col-no-margin.alf-colspan-2 {
+    margin: 0 !important;
+    width: 1024px;
+}
+
+.alf-col-no-margin.alf-col-1 {
+    left: 0px;
+}
+
+.alf-col-1 {
+  left: 35px;
+}
+
+.alf-col-2 {
+   left: 529px;
+}
+
+.alf-col-3 {
+  left: 1023px;
+}
+
+.alf-col-4 {
+  left: 1517px;
+}
+
+.alf-col-5 {
+  left: 2011px;
+}
+
+.alf-cols-1 {
+  width: 460px;
+}
+
+.alf-cols-2 {
+  width: 1024px;
+}
+
+.alf-cols-3 {
+  width: 1448px;
+}
+
+.alf-cols-4 {
+  width: 1942px;
+}
+
+.alf-cols-5 {
+  width: 2436px;
+}
+
+.alf-colspan-1 {
+  width: 460px;
+}
+
+.alf-colspan-2 {
+  width: 954px;
+}
+
+.alf-colspan-3 {
+  width: 1448px;
+}
+
+.alf-colspan-4 {
+  width: 1942px;
+}
+
+.alf-colspan-5 {
+  width: 2436px;
+}
