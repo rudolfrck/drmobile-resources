@@ -1177,6 +1177,7 @@ hr {
     text-transform: none !important;
 }
 
+
 .alf-font-sans-serif {
     font-family: Gotham-Book !important;
     font-weight: normal !important;
@@ -1198,7 +1199,7 @@ hr {
 }
 
 .alf-is-playing .alf-effect-fade-in-late {
-    -webkit-transition: opacity ease-out 300ms 3s;
+    -webkit-transition: opacity ease-out 1s 4s;
     opacity: 1 !important;
 }
 
