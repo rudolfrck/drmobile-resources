@@ -1162,6 +1162,10 @@ hr {
     text-shadow: 0 0px 8px blue !important;
 }
 
+.alf-style-text-shadow-strong-pink {
+    text-shadow: 0 0px 8px pink !important;
+}
+
 /**
  * Alf fonts
  * These will be available in the font dropdown
