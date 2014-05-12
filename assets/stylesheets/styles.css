@@ -568,12 +568,12 @@ hr {
     text-align: center;
 }
 
-.alf-region blockquote::before {
-    content: '“'
-}
-
+.alf-region blockquote::before,
 .alf-region blockquote::after {
-    content: '“'
+    content: '“';
+    font-family: "Times New Roman";
+    font-weight: bold;
+    font-size: 48px;
 }
 
 .alf-container blockquote {
