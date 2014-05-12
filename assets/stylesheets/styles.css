@@ -568,6 +568,10 @@ hr {
     text-align: center;
 }
 
+.alf-region blockquote::before {
+    content: '“'
+}
+
 .alf-container blockquote {
     padding: 0;
     margin: 0 0 24px 0;
