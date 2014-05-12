@@ -563,7 +563,7 @@ hr {
     padding: 0;
     margin: 0 0 24px;
     font-style: italic;
-    font-size: 38px;
+    font-size: 34px;
     line-height: 42px;
     text-align: center;
 }
@@ -573,7 +573,7 @@ hr {
     content: '“';
     font-family: "Times New Roman";
     font-weight: bold;
-    font-size: 48px;
+    font-size: 40px;
 }
 
 .alf-container blockquote {
