@@ -3,8 +3,6 @@
     src: url(../fonts/ChronicleDeck-Black.otf);
 }
 
-
-
 @font-face {
     font-family: 'Gotham-Black';
     src: url(../fonts/Gotham-Black.otf);
@@ -35,30 +33,6 @@
     src: url(../fonts/palatino.ttf);
 }
 
-/** Preview styles */
-.alf-mode-preview .dp-plugin-twitter {
-    background-color: #00ACED;
-}
-
-.alf-mode-preview .dp-plugin-twitter:after {
-    content: '';
-    background: url(https://twitter.com/images/resources/twitter-bird-dark-bgs.png) no-repeat;
-    background-size: 100% 100%;
-    width: 150px;
-    height: 150px;
-}
-
-.alf-mode-preview .dp-iframe {
-    width: 100%;
-    height: 100%;
-}
-
-.alf-mode-preview .dp-iframe:after {
-    content: '';
-}
-
-/** End preview styles */
-
 /**
  * General styles
  */
@@ -78,44 +52,6 @@ body {
     -webkit-user-select: none;
     overflow-x: hidden;
 }
-
-/** Alf Guides start **/
-
-.alf-guides {
-    top: 35px;
-    right: 35px;
-    bottom: 35px;
-    left: 35px;
-}
-
-.alf-guides.alf-format-iphone {
-    top: 15px;
-    right: 15px;
-    bottom: 15px;
-    left: 15px;
-}
-
-/* Number of default rows */
-.alf-guides tr:not(:nth-child(-n+4)) {
-    display: none;
-}
-
-/* Number of default columns */
-.alf-guides tr td:not(:nth-child(-n+4)) {
-    display: none;
-}
-
-/* Number of rows for iphone */
-.alf-guides.alf-format-iphone tr:not(:nth-child(-n+2)) {
-    display: none;
-}
-
-/* Number of columns for iphone */
-.alf-guides.alf-format-iphone tr td:not(:nth-child(-n+2)) {
-    display: none;
-}
-
-/** Alf Guides end **/
 
 .chrome a, a:visited {
     color: #333;

@@ -1,0 +1,42 @@
+.position-all(@value) {
+    top: @value;
+    right: @value;
+    bottom: @value;
+    left: @value;
+}
+
+.guides(@outerMargin, @rows: 4, @columns: 4, @format: true) {
+    .alf-guides.alf-format-@{format} {
+        .position-all(@outerMargin);
+    }
+
+    /* Number of rows */
+    .alf-guides.alf-format-@{format} tr:not(:nth-child(-n + @{rows})) {
+        display: none;
+    }
+
+    /* Number of columns */
+    .alf-guides.alf-format-@{format} tr td:not(:nth-child(-n + @{columns})) {
+        display: none;
+    }
+}
+
+/**
+ * Wish there was a better way of doing this.
+ */
+
+.guides(@outerMargin, @rows: 4, @columns: 4, @format: true) when (@format = true) {
+    .alf-guides {
+        .position-all(@outerMargin);
+    }
+
+    /* Number of rows */
+    .alf-guides tr:not(:nth-child(-n + @{rows})) {
+        display: none;
+    }
+
+    /* Number of columns */
+    .alf-guides tr td:not(:nth-child(-n + @{columns})) {
+        display: none;
+    }
+}

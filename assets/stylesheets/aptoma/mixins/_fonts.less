@@ -1,0 +1,8 @@
+.font-face(@family, @filename, @weight: normal, @style: normal) {
+    @font-face {
+        font-family: @family;
+        src: url("@{fonts-location}/@{filename}") format('opentype');
+        font-weight: @weight;
+        font-style: @style;
+    }
+}
