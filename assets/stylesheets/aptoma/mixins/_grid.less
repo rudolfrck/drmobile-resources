@@ -16,6 +16,25 @@
 .grid(@columns, @formatWidth, @columnWidth, @outerMargin) {
     @columnSpacing: (@formatWidth - ((@columnWidth * @columns) + (@outerMargin * 2))) / (@columns - 1);
 
+    .alf-region.alf-col-bottom,
+    .alf-col-bottom {
+        margin-bottom: @outerMargin !important;
+    }
+
+    .alf-region.alf-col-top,
+    .alf-col-top {
+        margin-top: @outerMargin !important;
+    }
+
+    .alf-col-no-margin.alf-col-1 {
+        left: 0px;
+    }
+
+    .alf-col-no-margin {
+        margin: 0 !important;
+        width: @columnWidth + @outerMargin;
+    }
+
     .grid-cols(@index) when (@index <= @columns) {
         .alf-cols-@{index} {
             width: (@columnWidth * @index) + (@outerMargin * 2) + (@columnSpacing * (@index - 1));
@@ -32,11 +51,6 @@
         .grid-col(@index + 1);
     }
 
-    .alf-col-no-margin {
-        margin: 0 !important;
-        width: @columnWidth + @outerMargin;
-    }
-
     .grid-colspan(@index) when (@index < @columns) {
         @width: (@columnWidth * @index) + (@columnSpacing * (@index - 1));
 
@@ -45,7 +59,7 @@
         }
 
         .alf-colspan-@{index}.alf-col-no-margin {
-            width: @width + (@outerMargin );
+            width: @width + @outerMargin;
         }
 
         .grid-colspan(@index + 1);
@@ -63,20 +77,6 @@
         }
 
         .grid-colspan(@index + 1);
-    }
-
-    .alf-region.alf-col-bottom,
-    .alf-col-bottom {
-        margin-bottom: @outerMargin !important;
-    }
-
-    .alf-region.alf-col-top,
-    .alf-col-top {
-        margin-top: @outerMargin !important;
-    }
-
-    .alf-col-no-margin.alf-col-1 {
-        left: 0px;
     }
 
     .grid-cols(1);
