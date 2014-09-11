@@ -43,58 +43,6 @@ body {
     display: none !important;
 }
 
-/* iPhone */
-@media (max-width: 1023px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    .chrome {
-        width: 100%;
-        overflow: visible;
-    }
-
-    .alf-page-content {
-       overflow: visible;
-    }
-}
-
-/* iPad */
-@media (min-width: 1024px) and (max-width: 1517px) and (min-height: 748px) {
-    body {
-        overflow: hidden;
-    }
-
-    .chrome {
-        width: 1024px;
-        max-height: 748px;
-        overflow: hidden;
-    }
-}
-
-@media (min-width: 1518px) and (max-width: 2011px) {
-    .chrome {
-        width: 1518px;
-    }
-}
-
-@media (min-width: 2012px) and (max-width: 2505px) {
-    .chrome {
-        width: 2012px;
-    }
-}
-
-@media (min-width: 2506px) {
-    .chrome {
-        width: 2506px;
-    }
-}
-
-.layer-content {
-    background-color: #f5f5f5;
-}
-
-.layer-fullscreen,
 .tmpl-gallery {
     z-index: 2147483647;
     background-color: #000;
@@ -106,16 +54,6 @@ body {
     -moz-box-align: center;
     -ms-box-align: center;
     min-height: 748px;
-}
-
-.layer-fullscreen {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    min-height: 0;
-    overflow: hidden;
 }
 
 .tmpl-fullsize-media .alf-container {
