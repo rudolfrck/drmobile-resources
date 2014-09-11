@@ -1,0 +1,96 @@
+/**
+ * Specific iPhone styles
+ * These styles affects only iphone
+ */
+.iphone {
+
+    .alf-template {
+        overflow: hidden
+    }
+
+    .alf-container,
+    .alf-region {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .byline {
+        padding: 8px 0;
+        margin: 0 15px 10px;
+    }
+
+    .alf-container.top-image {
+        margin: 0 0 20px;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    &.tmpl-no-media .title {
+        padding-top: 20px;
+    }
+
+    .media-element {
+        -webkit-box-orient:vertical;
+    }
+
+    .header-sans-serif h1 {
+        font-size: 60px;
+    }
+
+    .overlay-caption {
+        text-shadow: none;
+        position: static;
+        background: none;
+        color: #444;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        float: none;
+        padding: 10px 5px 10px;
+    }
+
+    .excerpt p {
+        margin: 0.75 0 1em;
+    }
+
+    .alf-slideshow-toggle {
+        display: block;
+        top: 50%;
+        right: 50%;
+        width: 80px;
+        height: 47px;
+        margin-top: -50px;
+        margin-right: -60px;
+        padding: 32px 15px 0;
+    }
+
+}
+
+.tmpl-gallery-iphone .alf-slideshow-toggle:before,
+.iphone .alf-slideshow-toggle:before {
+    content: 'Vis galleri';
+    line-height: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.tmpl-gallery-iphone .alf-slideshow-toggle:after,
+.iphone .alf-slideshow-toggle:after {
+    content: '';
+    height: 24px;
+    width: 22px;
+    top: 13px;
+    right: 50%;
+    margin-right: -11px;
+    background: url('../gfx/galleryIcon.png') no-repeat center center;
+    background-size: 100%;
+}
+
+.tmpl-gallery .alf-slideshow-stack-1,
+.tmpl-gallery .alf-slideshow-stack-2 {
+    display: none;
+}
