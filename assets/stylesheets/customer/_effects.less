@@ -1,0 +1,35 @@
+[class*="alf-effect-"] {
+    -webkit-transition: none;
+    -webkit-animation: none;
+}
+
+.alf-effect-fade-in-late {
+    opacity: 0 !important;
+}
+
+.alf-is-playing .alf-effect-ken-burns {
+    -webkit-transition: -webkit-transform ease-in-out 10s;
+    -webkit-transform: scale(1.4);
+}
+
+.alf-is-playing .alf-effect-fade-in-late {
+    -webkit-transition: opacity ease-out 1s 4s;
+    opacity: 1 !important;
+}
+
+.alf-effect-slide-in-left {
+    -webkit-transform: translate3d(-1000px, 0, 0);
+    opacity: 0;
+}
+
+.alf-effect-slide-in-right {
+    -webkit-transform: translate3d(1000px, 0, 0);
+    opacity: 0;
+}
+
+.alf-is-playing .alf-effect-slide-in-left,
+.alf-is-playing .alf-effect-slide-in-right {
+    -webkit-transition: -webkit-transform ease-in 500ms, opacity ease-in 200ms;
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
