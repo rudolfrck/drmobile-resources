@@ -81,22 +81,27 @@
 }
 
 .tmpl-excerpt-with-background .byline {
-    font-family: gotham-medium;
+    font-family: Gotham-Medium;
 }
 
-.frontpage-1 .excerpt h2 {
-    font-family: Gotham-Book;
-    font-weight: normal;
-}
+.frontpage-1 {
+    .excerpt {
+        h2 {
+            font-family: Gotham-Book;
+            font-weight: normal;
+        }
 
-.frontpage-1 .excerpt p {
-    font-family: Gotham-Book;
-    font-weight: normal;
+        p {
+            font-family: Gotham-Book;
+            font-weight: normal;
+        }
+    }
 }
 
 .alf-fullscreen-toolbar {
     a, button {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: normal;
     }
 }
 
@@ -121,16 +126,18 @@ h1 {
     }
 }
 
-.alf-region blockquote p,
-.alf-container blockquote p {
-    font-family: Gotham-Bold;
-    font-weight: bold;
-}
+.alf-region, .alf-container {
+    blockquote {
+        p {
+            font-family: Gotham-Bold;
+            font-weight: bold;
+        }
 
-.alf-region blockquote small,
-.alf-container blockquote small {
-    font-family: Gotham-Book;
-    font-weight: normal;
+        small {
+            font-family: Gotham-Book;
+            font-weight: normal;
+        }
+    }
 }
 
 .byline {
