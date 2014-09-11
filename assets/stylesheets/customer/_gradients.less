@@ -1,0 +1,43 @@
+/**
+ * Gradients
+ */
+.gradient-light-to-dark {
+    background: url(../gfx/GradientBottomTop.png) no-repeat left bottom;
+    background-size: 100% 100%;
+    pointer-events: none;
+}
+
+.tmpl-cover-with-background-and-gradient .gradient-light-to-dark {
+    background: url(../gfx/GradientCoverBottomTop.png) no-repeat left bottom;
+    background-size: 100% 100%;
+    pointer-events: none;
+}
+
+.left-gradient-dark-to-light {
+    background: url(../gfx/GradientLeftRight.png) no-repeat left bottom;
+    background-size: 100% 100%;
+    pointer-events: none;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+    .gradient-light-to-dark {
+        background: url(../gfx/GradientBottomTop@2x.png) no-repeat left bottom;
+        background-size: 100% 100%;
+        pointer-events: none;
+    }
+    .tmpl-cover-with-background-and-gradient .gradient-light-to-dark {
+        background: url(../gfx/GradientCoverBottomTop@2x.png) no-repeat left bottom;
+        background-size: 100% 100%;
+        pointer-events: none;
+    }
+    .left-gradient-dark-to-light {
+        background: url(../gfx/GradientLeftRight@2x.png) no-repeat left top;
+        background-size: 100% 100%;
+        pointer-events: none;
+    }
+    .dark-background {
+        background: url(../gfx/bg_noise@2x.png) repeat left bottom #3D3D3D;
+        pointer-events: none;
+    }
+}
