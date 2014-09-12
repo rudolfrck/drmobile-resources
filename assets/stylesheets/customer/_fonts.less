@@ -4,111 +4,86 @@
 // Oswald
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 
-// Open sans condensed
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic);
-
 /**
  * Alf fonts
  * These will be available in the font dropdown
  */
 
 .alf-font-condensed {
-    font-family: Oswald !important;
+    font-family: @fonts-condensed-family !important;
     font-weight: bold !important;
     text-transform: uppercase !important;
-    line-height: 0.9em !important;
 }
 
 .alf-font-serif {
-    font-family: "PT serif" !important;
+    font-family: @fonts-serif-family !important;
     font-weight: normal !important;
     text-transform: none !important;
 }
 
 .alf-font-sans-serif {
-    font-family: "Open sans" !important;
+    font-family: @fonts-sans-family !important;
     font-weight: normal !important;
     text-transform: none !important;
 }
 
-.header-section {
-    font-family: "Open sans";
-}
-
-.alf-fullscreen-toolbar {
-    a, button {
-        font-family: "Open sans", Helvetica, Arial, sans-serif;
+.serif {
+    &, h1 {
+        font-family: @fonts-serif-family;
+        font-size: 80px;
         font-weight: normal;
     }
 }
 
-
-// Title:
-// sans serif og serif
-
-// title-serif
-// title-sans-serif
-
-// excerpt-serif
-// excerpt-sans-serif
-
-// body
-// h1, h2, h3, h4
-// p strong
-
-// Serif
-// Sans-serif
-// Book/magazine
-
-// 2 excerpt
-// 1
-
-// Extra fonts
-
-// Add standard serif/sans-serifs before these?
-
-.serif {
+.sans {
     &, h1 {
-        font-family: "PT serif";
-        font-size: 80px;
-        weight: normal;
-        text-transform: uppercase;
-    }
-}
-.sans-serif {
-    &, h1 {
-        font-family: "Open sans";
+        font-family: @fonts-sans-family;
         font-size: 130px;
-        weight: normal;
+        font-weight: normal;
     }
 }
 
-.title {
-    &.serif,
-    &.serif h1 {
-        font-family: "PT serif";
-        font-size: 80px;
-        weight: normal;
-        text-transform: uppercase;
-    }
-
-    &.sans-serif,
-    &.sans-serif h1 {
-        font-family: 'Open Sans Condensed', sans-serif;
-        font-size: 100px;
+.condensed {
+    &, h1 {
+        font-family: @fonts-condensed-family;
+        font-size: 130px;
         font-weight: 700;
         text-transform: uppercase;
     }
 }
 
-.excerpt {
-    &.serif {
-        font-family: "PT serif";
-        font-weight: normal;
+.title {
+    &.serif
+    &.serif h1 {
+        font-size: 80px;
     }
 
-    &.sans-serif {
-        font-family: "Open sans";
+    &.sans,
+    &.sans h1 {
+        font-size: 100px;
+    }
+
+    &.condensed,
+    &.condensed h1 {
+        font-size: 100px;
+    }
+}
+
+.excerpt {
+    &.serif {
+    }
+
+    &.sans {
+    }
+}
+
+.header-section {
+    font-family: @fonts-sans-family;
+}
+
+.alf-fullscreen-toolbar {
+    a, button {
+        font-family: @fonts-sans-family;
         font-weight: normal;
     }
 }
