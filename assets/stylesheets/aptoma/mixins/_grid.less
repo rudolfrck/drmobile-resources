@@ -7,14 +7,15 @@
     padding: 0;
 }
 
-[class*=alf-col-] {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 .grid(@columns, @formatWidth, @columnWidth, @outerMargin) {
     @columnSpacing: (@formatWidth - ((@columnWidth * @columns) + (@outerMargin * 2))) / (@columns - 1);
+
+    [class*=alf-col-] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: @columnWidth;
+    }
 
     .alf-region.alf-col-bottom,
     .alf-col-bottom {
