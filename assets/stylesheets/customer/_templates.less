@@ -76,7 +76,7 @@ hr {
         }
 
         small {
-            line-height: 24px;
+            line-height: @line-height;
             font-size: 18px;
         }
     }
@@ -88,7 +88,7 @@ hr {
 
     ul {
         padding-left: 25px;
-        line-height: 24px;
+        line-height: @line-height;
     }
 
     li {
@@ -247,13 +247,15 @@ hr {
     background: #171717;
 }
 
-.tmpl-draggable-portrait-image .media-element {
-    display: -webkit-box;
-    display: box;
-    -webkit-box-pack: end;
-    -moz-box-pack: end;
-}
+.tmpl-draggable-portrait-image {
+    .media-element {
+        display: -webkit-box;
+        display: box;
+        -webkit-box-pack: end;
+        -moz-box-pack: end;
+    }
 
-.tmpl-draggable-portrait-image .frontpage-top-left {
-    width: 50%;
+    .frontpage-top-left {
+        width: 50%;
+    }
 }
