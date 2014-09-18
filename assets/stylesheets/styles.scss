@@ -9,13 +9,13 @@
 //
 
 // Default variables
-@import "aptoma/_variables";
+@import "aptoma/variables";
 
 // Customer variables (overrides aptoma/_variables)
-@import "customer/_variables";
+@import "customer/variables";
 
 // Base styles
-@import "aptoma/_styles";
+@import "aptoma/styles";
 
 // Customer styles
-@import "customer/_styles";
+@import "customer/styles";

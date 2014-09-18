@@ -3,10 +3,10 @@
 // iPad landscape grid
 @media (min-width: 1024px) {
     // number of columns, format width, column width, outer margin
-    .grid(2, 1024px, 440px, 55px);
+    @include grid(2, 1024px, 440px, 55px);
 }
 
 // Big grid
 @media (min-width: 2506px) {
-    .grid(5, 2506px, 460px, 35px);
+    @include grid(5, 2506px, 460px, 35px);
 }

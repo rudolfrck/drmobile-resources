@@ -1,7 +1,7 @@
-@import "../aptoma/fonts/_ptserif";
-@import "../aptoma/fonts/_opensans";
-@import "../aptoma/fonts/_oswald";
-@import "../aptoma/fonts/_lora";
+@import "../aptoma/fonts/ptserif";
+@import "../aptoma/fonts/opensans";
+@import "../aptoma/fonts/oswald";
+@import "../aptoma/fonts/lora";
 
 /**
  * Alf fonts
@@ -44,5 +44,5 @@
 }
 
 .header-section {
-    font-family: @fonts-sans;
+    font-family: $fonts-sans;
 }

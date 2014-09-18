@@ -1,0 +1,61 @@
+.alf-font-condensed {
+    font-family: $fonts-condensed !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+}
+
+.alf-font-serif {
+    font-family: $fonts-serif !important;
+    font-weight: 700 !important;
+    text-transform: none !important;
+}
+
+.alf-font-sans-serif {
+    font-family: $fonts-sans !important;
+    font-weight: normal !important;
+    text-transform: none !important;
+}
+
+@mixin serif {
+    .serif {
+        &, h1 {
+            font-family: $fonts-serif;
+            font-size: 80px;
+            font-weight: 700;
+        }
+    }
+}
+
+@mixin sans {
+    .sans {
+        &, h1 {
+            font-family: $fonts-sans;
+            font-size: 130px;
+            font-weight: normal;
+        }
+    }
+}
+
+@mixin condensed {
+    .condensed {
+        &, h1 {
+            font-family: $fonts-condensed;
+            font-size: 130px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+.title {
+    @include serif;
+}
+
+.excerpt, .byline, .section {
+    @include sans;
+}
+
+@include serif;
+@include sans;
+@include condensed;

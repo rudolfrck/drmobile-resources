@@ -76,7 +76,6 @@ hr {
         }
 
         small {
-            line-height: @line-height;
             font-size: 18px;
         }
     }
@@ -88,7 +87,6 @@ hr {
 
     ul {
         padding-left: 25px;
-        line-height: @line-height;
     }
 
     li {
