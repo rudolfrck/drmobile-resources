@@ -38,13 +38,14 @@
 
     @for $i from 1 through $columns {
         $width: ($columnWidth * $i) + ($columnSpacing * ($i - 1));
+        $outerWidth: $width + ($outerMargin * 2);
 
         .alf-cols-#{$i} {
-            width: ($columnWidth * $i) + ($outerMargin * 2) + ($columnSpacing * ($i - 1));
+            width: $outerWidth;
         }
 
         .alf-col-#{$i} {
-            left: $outerMargin + (($i - 1) * $columnWidth) + (($i - 1) * $columnSpacing);
+            left: $outerMargin + ($columnWidth * ($i - 1)) + ($columnSpacing * ($i - 1));
         }
 
         .alf-colspan-#{$i} {
@@ -55,7 +56,7 @@
             @if ($i < $columns) {
                 width: $width + $outerMargin;
             } @else {
-                width: $width + ($outerMargin * 2);
+                width: $outerWidth;
             }
         }
     }
