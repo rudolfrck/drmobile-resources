@@ -16,46 +16,36 @@
     text-transform: none !important;
 }
 
-@mixin serif {
-    .serif {
-        &, h1 {
-            font-family: $fonts-serif;
-            font-size: 80px;
-            font-weight: 700;
-        }
-    }
-}
-
-@mixin sans {
-    .sans {
-        &, h1 {
-            font-family: $fonts-sans;
-            font-size: 130px;
-            font-weight: normal;
-        }
-    }
-}
-
-@mixin condensed {
-    .condensed {
-        &, h1 {
-            font-family: $fonts-condensed;
-            font-size: 130px;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-    }
-}
-
-
 .title {
-    @include serif;
+    @extend .serif;
 }
 
 .excerpt, .byline, .section {
-    @include sans;
+    @extend .serif;
 }
 
-@include serif;
-@include sans;
-@include condensed;
+.serif {
+    &, h1 {
+        font-family: $fonts-serif;
+        font-size: 80px;
+        font-weight: 700;
+    }
+}
+
+.sans {
+    &, h1 {
+        font-family: $fonts-sans;
+        font-size: 130px;
+        font-weight: normal;
+    }
+}
+
+
+.condensed {
+    &, h1 {
+        font-family: $fonts-condensed;
+        font-size: 130px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
