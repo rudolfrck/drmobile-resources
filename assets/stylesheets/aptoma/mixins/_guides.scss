@@ -11,14 +11,11 @@
         bottom: $outerMargin;
         left: $outerMargin;
 
-        // Number of rows
-        tr:not(:nth-child(-n + #{$rows})) {
-            display: none;
-        }
-
-        // Number of columns
-        tr td:not(:nth-child(-n + #{$columns})) {
-            display: none;
+        tr {
+            &:not(:nth-child(-n + #{$rows})),
+            td:not(:nth-child(-n + #{$columns})) {
+                display: none;
+            }
         }
     }
 }
