@@ -1,21 +1,19 @@
 @charset "UTF-8";
 
-.alf-chrome a, a:visited {
-    color: #333;
-    position: relative;
-    text-decoration: none;
-    font-weight: bold;
-    border-bottom: 1px dotted #ccc;
+.alf-chrome {
+    a,
+    a:visited {
+        color: #333;
+        position: relative;
+        text-decoration: none;
+        font-weight: bold;
+        border-bottom: 1px dotted #ccc;
+    }
 }
 
-.no-caption.overlay-caption,
-.no-caption .overlay-caption {
-    display: none !important;
-}
-
-/**
- * Page content styles
- */
+//
+// Page content styles
+//
 
 h1 {
     font-size: 28px;
@@ -28,6 +26,17 @@ hr {
     border-bottom: 1px solid #ddd;
 }
 
+blockquote {
+    p {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    small {
+        font-size: 18px;
+    }
+}
 
 .title {
     margin-top: 0;
@@ -64,21 +73,6 @@ hr {
     -moz-box-sizing: border-box;
 }
 
-.alf-container, .alf-region {
-    blockquote {
-        p {
-            font-size: 24px;
-            line-height: 32px;
-            margin-bottom: 10px;
-            letter-spacing: -0.07em;
-        }
-
-        small {
-            font-size: 18px;
-        }
-    }
-}
-
 .alf-region {
     margin-bottom: 16px;
     overflow: hidden;
@@ -103,12 +97,12 @@ hr {
         font-size: 34px;
         line-height: 42px;
         text-align: center;
-    }
 
-    blockquote::before,
-    blockquote::after {
-        content: '“';
-        font-size: 40px;
+        &::before,
+        &::after {
+            content: '“';
+            font-size: 40px;
+        }
     }
 }
 
@@ -128,7 +122,6 @@ hr {
         border: 0;
     }
 }
-
 
 .byline {
     border-color: #ddd;
@@ -157,31 +150,34 @@ hr {
     min-height: 768px;
 }
 
-.tmpl-fullsize-media .alf-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
+.tmpl-fullsize-media {
+    .alf-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
 
-.tmpl-fullsize-media .alf-container .media-element {
-    display: -moz-box;
-    display: -webkit-box;
-    display: box;
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -ms-box-align: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+        .media-element {
+            display: -moz-box;
+            display: -webkit-box;
+            display: box;
+            -webkit-box-pack: center;
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            -ms-box-align: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
 }
 
 .tmpl-overlay-with-excerpt {
-    .white-background, .black-background {
+    .white-background,
+    .black-background {
         padding-bottom: 0;
     }
 }
@@ -204,10 +200,17 @@ hr {
     width: inherit;
 }
 
-/**
- * Specific Template styles
- * These styles affects only specific alf-templates
- */
+.no-caption {
+    &.overlay-caption,
+    .overlay-caption {
+        display: none !important;
+    }
+}
+
+//
+// Specific Template styles
+// These styles affects only specific alf-templates
+//
 
 .tmpl-landscape-slim-2 .landscape-slim-media {
     max-height: 340px;
