@@ -1,0 +1,10 @@
+.snippet-column {
+    height: 400px;
+    background: $colors-background;
+}
+
+.snippet-column-single {
+    // Maybe move this to the grid mixin so the width is correct?
+    width: 530px;
+    background: $colors-background;
+}
