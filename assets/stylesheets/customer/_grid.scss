@@ -1,5 +1,5 @@
 // iPad landscape grid
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1024px) {
     // number of columns, format width, column width, outer margin
     @include grid(2, 1024px, 440px, 55px);
 }
