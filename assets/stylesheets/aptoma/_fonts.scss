@@ -24,6 +24,21 @@
     @extend .sans;
 }
 
+.motto {
+    font-size: 30px;
+    line-height: 30px;
+
+    &.serif,
+    &.serif h1 {
+        font-family: $fonts-serif;
+    }
+
+    &.sans,
+    &.sans h1 {
+        font-family: $fonts-sans;
+    }
+}
+
 .serif {
     &, h1 {
         font-family: $fonts-serif;
