@@ -38,16 +38,16 @@ body {
     -webkit-user-select: none;
 }
 
-.large {
-    .alf-chrome {
-        line-height: $line-height + 2;
-    }
+.large .alf-chrome .alf-region {
+    line-height: $line-height - 2;
 }
 
-.xlarge {
-    .alf-chrome {
-        line-height: $line-height + 4;
-    }
+.large .alf-chrome .alf-region {
+    line-height: $line-height + 2;
+}
+
+.xlarge .alf-chrome .alf-region {
+    line-height: $line-height + 4;
 }
 
 @import "mixins";
