@@ -2,7 +2,7 @@ html {
     font-size: 62.5%;
 
     &.small {
-        font-size: 43.75%;
+        font-size: 55.6%;
     }
 
     &.medium {
@@ -10,11 +10,11 @@ html {
     }
 
     &.large {
-        font-size: 81.25%;
+        font-size: 69.4%;
     }
 
     &.xlarge {
-        font-size: 100%;
+        font-size: 76.3%;
     }
 }
 
@@ -36,6 +36,18 @@ body {
     font-size: $fonts-body-size;
     line-height: $line-height;
     -webkit-user-select: none;
+}
+
+.large {
+    .alf-chrome {
+        line-height: $line-height + 2;
+    }
+}
+
+.xlarge {
+    .alf-chrome {
+        line-height: $line-height + 4;
+    }
 }
 
 @import "mixins";
