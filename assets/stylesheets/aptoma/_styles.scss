@@ -1,19 +1,19 @@
 html {
     font-size: 62.5%;
 
-    &.small {
+    &.alf-size-sm {
         font-size: 55.6%;
     }
 
-    &.medium {
+    &.alf-size-md {
         font-size: 62.5%;
     }
 
-    &.large {
+    &.alf-size-lg {
         font-size: 69.4%;
     }
 
-    &.xlarge {
+    &.alf-size-xl {
         font-size: 76.3%;
     }
 }
@@ -38,15 +38,15 @@ body {
     -webkit-user-select: none;
 }
 
-.large .alf-chrome .alf-region {
+.alf-size-sm .alf-chrome .alf-region {
     line-height: $line-height - 2;
 }
 
-.large .alf-chrome .alf-region {
+.alf-size-lg .alf-chrome .alf-region {
     line-height: $line-height + 2;
 }
 
-.xlarge .alf-chrome .alf-region {
+.alf-size-xl .alf-chrome .alf-region {
     line-height: $line-height + 4;
 }
 
