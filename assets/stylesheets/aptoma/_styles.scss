@@ -1,3 +1,23 @@
+html {
+    font-size: 62.5%;
+
+    &.small {
+        font-size: 43.75%;
+    }
+
+    &.medium {
+        font-size: 62.5%;
+    }
+
+    &.large {
+        font-size: 81.25%;
+    }
+
+    &.xlarge {
+        font-size: 100%;
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
